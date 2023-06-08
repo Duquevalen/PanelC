@@ -1,0 +1,33 @@
+.titulo{
+    font-size: 25px;
+    color: #025464;
+    text-align: center;
+    margin: 30%;
+   
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoItem{
+    flex: 1;
+    margin: 45px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.imagenn{
+    width: 220px;
+    height: 150px;
+}
+.infoTitle{
+    font-size: 20px;
+}
+.infoContainer{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}

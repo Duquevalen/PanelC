@@ -1,5 +1,6 @@
 import Sidebar from "../sidebar/sidebar"
 import Topbar from "../topbar/topbar"
+import Menu from "../../paginas/Menu"
 import"./panel.css"
 
 function Panel() {
@@ -10,7 +11,7 @@ function Panel() {
         <Topbar/>
         <div className="container">
           <Sidebar/>
-          <div className="other">other pago</div>
+          <Menu/>
         </div>
         </div>
 
