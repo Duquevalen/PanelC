@@ -1,43 +1,49 @@
+import { BrowserRouter as Router, Route,Routes,Link} from "react-router-dom";
 import "./sidebar.css"
 import {LineStyle,Timeline,TrendingUp,Person,Storefront,AttachMoney,ChecklistRtl,Report,ManageSearch} from "@mui/icons-material"
+import Menu from "../../paginas/Menu";
+import Analisis from "../../paginas/analisi/analisis";
 
 export default function Sidebar() {
   return (
-    <div className="sidebar">
+    <Router className="sidebar">
+    
     <div className="sidebarWrapper">
         <div className="sidebarMenu">
             <h3 className="sidebarTitle">Panel de control</h3>
             <ul className="sidebarList">
                 <li className="sidebarLisItem active">
                   <LineStyle className="sidebarIcon"/>
-                  Menu
+                  <Link to="/">Menu</Link>
                 </li>
-                <li className="sidebarLisItem">
+                <li
+                 className="sidebarLisItem">
                  <Timeline className="sidebarIcon"/>
-                    Analisis
+                 <Link to="/Analisis">Analisis</Link>
                </li>
                <li className="sidebarLisItem">
                  <TrendingUp className="sidebarIcon"/>
-                  Ingresos
+                 <Link to="/Ingresos">Ingresos</Link>
               </li>
                 <li className="sidebarLisItem">
                  <Storefront className="sidebarIcon"/>
-                 Productos
+                 <Link to="/Productos">Productos</Link>
               </li>
               <li className="sidebarLisItem">
                 <Person className="sidebarIcon"/>
-                 Usuarios
+                <Link to="/Usuarios">Ususarios</Link>
             </li>
              <li className="sidebarLisItem">
                <AttachMoney className="sidebarIcon"/>
-                Precios
+               <Link to="/Precios">Precios</Link>
            </li>
            <li className="sidebarLisItem">
              <ChecklistRtl className="sidebarIcon"/>
-              Pedidos
+             <Link to="/Pedidos">Pedidos</Link>
          </li>
             </ul>
         </div>
+        
   <div className="sidebarMenu">
       <h3 className="sidebarTitle">Personal</h3>
       <ul className="sidebarList">
@@ -52,6 +58,11 @@ export default function Sidebar() {
       </ul>
   </div>
     </div>
-    </div>
+    <Routes>
+        	<Route path="/" element={<Menu />} />
+        	<Route path="/Analisis" element={<Analisis />} />
+        </Routes>
+    </Router>
+    
   )
 }
