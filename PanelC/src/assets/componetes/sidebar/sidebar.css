@@ -1,26 +1,28 @@
-.sidebar{
+.sidebarL{
     flex: 1;
     height: 100svh;
-    background-color:rgba(234, 234, 241, 0.705);
+    background-color:rgba(229, 229, 236, 0.705);
     position: sticky;
     top: 50px;
 }
 .sidebarWrapper{
     padding: 20px;
-    color: #555;
+    color: #464545;
+    
 }
 .sidebarMenu{
     margin-bottom: 10px;
 }
 .sidebarTitle{
     font-size: 14px;
-    color:rgb(187, 186, 186);
+    color:rgb(161, 159, 159);
 }
+    
 .sidebarList{
     list-style: none;
     padding: 5px;
-
 }
+
 .sidebarLisItem{
     padding: 4px;
     cursor: pointer;
