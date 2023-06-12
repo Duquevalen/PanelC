@@ -25,16 +25,13 @@ export default function Sidebar() {
                   <LineStyle className="sidebarIcon"/>
                   <Link to="/">Menu</Link>
                 </li>
-                <li
-                 className="sidebarLisItem">
+                <li className="sidebarLisItem">
                  <Timeline className="sidebarIcon"/>
                  <Link to="/Analisis">Analisis</Link>
                </li>
-               <li className="sidebarLisItem">
+               <li className="sidebarLisItem" >
                  <TrendingUp className="sidebarIcon"/>
-                 <div className="sub">
                  <Link to="/Ingresos">Ingresos</Link>
-                 </div>
               </li>
                 <li className="sidebarLisItem">
                  <Storefront className="sidebarIcon"/>

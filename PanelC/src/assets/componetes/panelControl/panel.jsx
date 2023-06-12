@@ -3,6 +3,7 @@ import Sidebar from "../sidebar/sidebar"
 import Topbar from "../topbar/topbar"
 import"./panel.css"
 
+
 function Panel() {
 
   return (
