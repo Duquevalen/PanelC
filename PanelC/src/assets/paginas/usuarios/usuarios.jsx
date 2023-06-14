@@ -19,7 +19,7 @@ function Usuarios() {
       {data?.map((user)=>(
 
        <div className="lista">
-       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+       <List sx={{ width: '100%', maxWidth: 360 }}>
        <ListItem>
          <ListItemAvatar>
            <Avatar alt="tema" src="https://png.pngtree.com/png-vector/20191022/ourlarge/pngtree-user-vector-icon-with-white-background-png-image_1843115.jpg">

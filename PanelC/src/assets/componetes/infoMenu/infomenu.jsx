@@ -1,7 +1,9 @@
 import "./infoMenu.css"
+import Progreso from "../progreso/progreso"
 
 export default function Infomenu() {
   return (
+    
     <div>
         <span className="titulo">Conoce mas sobre duqueza</span>
             <div className="infoItem">

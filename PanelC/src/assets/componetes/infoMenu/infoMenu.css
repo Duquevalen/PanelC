@@ -5,6 +5,7 @@
     text-align: center;
     align-items: center;
     font-family: 'Merienda', cursive;
+    margin: 26%;
     
    
 }
@@ -42,4 +43,11 @@
         font-size: 25px;
         margin: 20%;
     }
+}
+@media screen and (max-width: 778px){
+    .titulo {
+        font-size: 20spx;
+        margin: 15%;
+    }
+
 }
