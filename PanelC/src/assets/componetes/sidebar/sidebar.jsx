@@ -1,12 +1,11 @@
 import { BrowserRouter as Router, Route,Routes,Link} from "react-router-dom";
 import "./sidebar.css"
-import {LineStyle,Timeline,TrendingUp,Person,Storefront,AttachMoney,ChecklistRtl,Report,ManageSearch} from "@mui/icons-material"
+import {LineStyle,Timeline,TrendingUp,Person,Storefront,ChecklistRtl,Report,ManageSearch} from "@mui/icons-material"
 import Menu from "../../paginas/Menu";
 import Analisis from "../../paginas/analisis/analisis";
 import Ingresos from "../../paginas/ingresos/ingresos";
 import Productos from "../../paginas/productos/productos";
 import Usuarios from "../../paginas/usuarios/usuarios";
-import Precios from "../../paginas/precios/precios";
 import Pedidos from "../../paginas/pedidos/pedidos";
 import Administrar from "../../paginas/administrar/administrar";
 import Reportes from "../../paginas/reportes/reportes";
@@ -41,10 +40,6 @@ export default function Sidebar() {
                 <Person className="sidebarIcon"/>
                 <Link to="/Usuarios">Usuarios</Link>
             </li>
-             <li className="sidebarLisItem">
-               <AttachMoney className="sidebarIcon"/>
-               <Link to="/Precios">Precios</Link>
-           </li>
            <li className="sidebarLisItem">
              <ChecklistRtl className="sidebarIcon"/>
              <Link to="/Pedidos">Pedidos</Link>
@@ -73,7 +68,6 @@ export default function Sidebar() {
           <Route path="/Ingresos" element={<Ingresos />} />
           <Route path="/Productos" element={<Productos />} />
           <Route path="/Usuarios" element={<Usuarios />} />
-          <Route path="/Precios" element={<Precios />} />
           <Route path="/Pedidos" element={<Pedidos/>} />
           <Route path="/Administrar" element={<Administrar />} />
           <Route path="/Reportes" element={<Reportes />} />

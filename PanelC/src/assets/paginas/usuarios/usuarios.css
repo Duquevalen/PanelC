@@ -1,3 +1,19 @@
 .Usuarios{
     flex: 4;
 }
+.lista{
+    display: flex;
+    padding: 15px;
+    position: relative;
+    float: left;
+    width: 20%;
+    margin: 10px;
+    height: 55px;
+    margin-left: 65px;
+    
+}
+.css-1mcnwpj-MuiList-root{
+    width: 220px;
+    height: 65px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}

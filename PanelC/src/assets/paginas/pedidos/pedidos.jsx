@@ -1,9 +1,20 @@
+import { useFetch } from "../../../useFetch"
 import "./pedidos.css"
+import Progreso from "../../componetes/progreso/progreso"
 
-export default function Pedidos() {
+function Pedidos() {
+  const {data, loading, error} = useFetch('https://fakestoreapi.com/carts/5')
+  
+
   return (
     <div className='pedidos'>
-      ordenes
+      {error && <li>Error: {error}</li>}
+      {loading && <Progreso/>}
+      {data?.map((pedidos)=>(
+        <li>{pedidos.id}</li>
+      ))}
+
     </div>
   )
 }
+export default Pedidos

@@ -2,7 +2,7 @@
 .sidebarL{
     flex: 1;
     height: 100svh;
-    background-color:rgba(229, 229, 236, 0.705);
+    background-color:rgba(231, 213, 224, 0.705);
     position: sticky;
     top: 50px;
     font-family: 'Merienda', cursive;
@@ -35,7 +35,7 @@
 }
 .sidebarLisItem.active,
 .sidebarLisItem:hover{
-    background-color: rgb(197, 226, 224);
+    background-color: #edb1b1;
 }
 .sidebarIcon{
     margin-right: 5px;
